@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    font-family: 'Poppins', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+main {
+    background: #FFF;
+}
+
+header {
+    padding: 40px 80px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul {
+    display: flex;
+    align-items: center;
+}
+.menu .logo {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 600;
+}
+nav > ul > li {
+    font-weight: 400;
+    margin-right: 20px;
+    font-size: 1.1rem;
+}
+nav > ul > i {
+    font-weight: 400;
+    margin-right: 20px;
+    font-size: 1.1rem;
+}
+
+.header-content {
+    padding: 40px 80px;
+    background-image: url("../img/images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.header-content .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-content .journey h1 {
+    font-size: 1.9rem;
+    padding: 10px 0;
+
+}
+.main-content .journey p {
+    font-size: .9rem;
+   margin-bottom: 10px;
+
+}
+
+.main-content .button {
+    border: none;
+    padding: 10px 28px;
+    font-size: .9rem;
+    color: white;
+    border-radius: 41px;
+    background: #E02C6D
+}
+
+.company-logo {
+    padding: 40px 80px;
+    
+}
+.company-logo .company-icon {
+    border: 1px solid rgb(198, 192, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 20px;
+}
+.company-logo .company-icon img {
+    width: 97.059px;
+    height: auto;
+}
+
+.popular-section {
+    padding: 40px 80px;
+}
+.popular-section .popular-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-box {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px 15px;
+}
+.product-box img {
+    width: 100%;
+}
+.product-box .product-title {
+    font-size: 1.5rem;
+    color: black;
+    padding: 5px 0;
+}
+.product-box  .product-price {
+    font-size: 1rem;
+    font-size: 400;
+    color: black;
+    padding: 5px 0;
+}
+.product-box .ratting i {
+    color: #FB8200;
+}
+.product-box .ratting i span {
+    color: black;
+    padding-left: 5px;
+    font-weight: 300;
+}
+
+
+.see-more {
+    padding: 30px 0;
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+    cursor: pointer;
+  
+}
+.see-more p {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+.features {
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features-box h1 {
+    font-size: 1.7rem;
+    color: black;
+    padding: 10px 0;
+}
+.features-box p {
+    font-size: 1.1rem;
+    color: black;
+}
+.features-box .but {
+    margin-top: 10px;
+    border: none;
+    padding: 10px 24px;
+    background: #E02C6D;
+    color: white;
+}
+
+
+
+footer {
+    padding: 40px 0;
+    background: #0A0826;
+    
+}
+.footer-content {
+    text-align: center;
+    color: white;
+}
+.footer-content .foot-icon {
+    padding: 12px 0;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.footer-content .foot-icon i {
+    margin-right: 1rem;
+}
+
+
+/* media-queries */
+
+@media screen and (max-width: 576px) {
+    .header-content .main-content {
+       flex-direction: column-reverse;
+       justify-content: center;
+    }
+   .product {
+    grid-template-columns: 1fr;
+    align-self: center;
+   }
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .product {
+        grid-template-columns: repeat(2, 1fr);
+        align-self: center;
+       }
+}
+
